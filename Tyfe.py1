@@ -814,6 +814,23 @@ def user2script(op):
                     if defclose:
                         x.preventJoinByTicket = True
                         kk.updateGroup(x)
+#============
+       if op.type == 17:
+            group = cl.getGroup(op.param1)
+            cb = Message()
+            cb.to = op.param1
+            cb.text = cl.getContact(op.param2).displayName + "  ยินดีต้อนรับสู่กลุ่ม  " + group.name
+            cl.sendMessage(cb)
+
+        if op.type == 15:
+            group = cl.getGroup(op.param1)
+            cb = Message()
+            cb.to = op.param1
+            cb.text = cl.getContact(op.param2).displayName + "  บ๊าย บาย แล้วกลับมาใหม่นะ  " + group.name
+            cl.sendMessage(cb)
+                        
+                        
+                        
         if op.type == 17:
             if op.param2 == user1:
                 now2 = datetime.datetime.now()
