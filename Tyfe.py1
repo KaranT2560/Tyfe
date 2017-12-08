@@ -7,7 +7,7 @@ from googletrans import Translator
 import time,random,sys,json,codecs,threading,glob,re,datetime,urllib2,pickle,requests,base64,antolib
 
 cl = LINETCR.LINE()
-cl.login(token="EnMEnp4xeuTUPFUfjMOa.R1+UjDAUJmrKXLmqjUXa2G.bUgsK6NHcrKEdoebRwM6Fk1WtkmBQ2fwQx9xgAHDfbQ=")
+cl.login(token="En0xNLQt7KT1u7uD8G7a.R1+UjDAUJmrKXLmqjUXa2G.Cu/y43kbwDsUwxlsDLZ8pTv4H/ZfkNnDaBpbB7hx9h0=")
 cl.loginResult()
 
 kk = LINETCR.LINE()
@@ -403,7 +403,7 @@ def user1script(op):
                 elif msg.text.lower() == ".tyfelogin":
                     if not TyfeLogged:
                         lgncall = msg.to
-                        kk.login(token="EnEXo7ehyUKGqegMGr1f.jUMjzbZRJV8eqpaJQqQDtW.AIKE2Bcheb6kyvOButz1RSeLkGPB6kWcIsrnIz1JRzg=")
+                        kk.login(token="EnV54KGkNP5h0VrD69Tf.jUMjzbZRJV8eqpaJQqQDtW.C+lCZLO4ivHSx+yp4KCvgA6M2g4i68bmPYBcQLikL3Q=")
                         kk.loginResult()
                         user2 = kk.getProfile().mid
                         TyfeLogged = True
